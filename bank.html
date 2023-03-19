@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Reahana : Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6">Let gets some  
+            <span class="font-semibold text-blue-600"  >Money !!! </span> </h1>
+        
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-green-400 rounded-xl p-8">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 class="text-5xl">$ <span id="depositTotal"> 000 </span></h2>
+                </div>
+                <div class="bg-red-400 rounded-xl p-8">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-5xl">$<span id="withdrawTotal"> 000 </span></h2>
+                </div>
+                <div class="bg-orange-600 rounded-xl p-8">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-5xl">$<span id="balanceTotal">1240 </span></h2>
+                </div>
+            </div>
+           <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-fuchsia-400 rounded-xl p-8">
+                    <h4 class="text-2xl mb-4 text-white">Please Deposit</h4>
+                    <input class="w-9/12 block mb-2 px-3" type="number" name="" id="depositAmount" placeholder="$amount ">
+                    <button id="depositBtn" class="bg-indigo-600 hover:bg-sky-800 px-8 py-2 text-white font-medium rounded-2xl">Deposit</button>
+            
+                </div>
+                <div class="bg-sky-400 rounded-xl p-8">
+                    <h4 class="text-2xl mb-4 text-white">Please Withdraw</h4>
+                    <input class="w-9/12 block mb-2 px-3" type="number" name="" id="withdrawAmount" placeholder="$amount ">
+                    <button id="withdawBtn" class="bg-yellow-600 hover:bg-pink-800 px-8 py-2 text-white font-medium rounded-2xl">Deposit</button>
+            
+                </div>
+            </div>
+           </section>
+        </section>
+    </main>
+</body>
+<script src="./js/deposit.js"></script>
+<script src="./js/withdraw.js"></script>
+</html>
